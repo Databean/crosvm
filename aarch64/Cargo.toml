@@ -32,4 +32,4 @@ vm_control = { path = "../vm_control" }
 vm_memory = { path = "../vm_memory" }
 
 [target.'cfg(any(target_os = "android", target_os = "linux"))'.dependencies]
-minijail = "*"
+minijail = { path = "../third_party/minijail/rust/minijail" }

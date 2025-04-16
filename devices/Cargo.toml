@@ -50,7 +50,7 @@ async-task = "4"
 acpi_tables = {path = "../acpi_tables" }
 anyhow = "1"
 async-trait = "0.1.36"
-audio_streams = "*"
+audio_streams = { path = "../common/audio_streams" }
 audio_util = { path = "../audio_util" }
 balloon_control = { path = "../common/balloon_control" }
 base = { path = "../base" }
@@ -108,8 +108,8 @@ ciborium = { workspace = true }
 android_audio = { path = "../android_audio" }
 fuse = {path = "../fuse" }
 jail = { path = "../jail" }
-libcras = { version = "*", optional = true }
-minijail = "*"
+libcras = { path = "../libcras_stub", optional = true }
+minijail = { path = "../third_party/minijail/rust/minijail" }
 net_sys = { path = "../net_sys" }
 p9 = "0.3.1"
 usb_util = { path = "../usb_util" }
